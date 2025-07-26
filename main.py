@@ -1,4 +1,4 @@
-def sort(width, height, length, mass) -> str:
+def sort(width: float, height: float, length: float, mass: float) -> str:
     package_type = []
     if width >= 150 or height >= 150 or length >= 150:
         package_type.append('bulky')
