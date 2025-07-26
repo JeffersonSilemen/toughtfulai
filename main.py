@@ -17,3 +17,11 @@ def sort(width: float, height: float, length: float, mass: float) -> str:
         deliver = "STANDARD"
 
     return deliver
+
+
+if __name__ == "__main__":
+    print("Package examples:")
+    print(f"50x50x50, 10kg: {sort(50, 50, 50, 10)}")
+    print(f"160x50x50, 10kg: {sort(160, 50, 50, 10)}")
+    print(f"50x50x50, 25kg: {sort(50, 50, 50, 25)}")
+    print(f"160x50x50, 25kg: {sort(160, 50, 50, 25)}")
