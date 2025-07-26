@@ -4,7 +4,7 @@ def sort(width, height, length, mass) -> str:
         package_type.append('bulky')
     elif (width * height * length) >= 1000000:
         package_type.append('bulky')
-    elif mass >= 20:
+    if mass >= 20:
         package_type.append('heavy')
 
     if "bulky" in package_type and "heavy" in package_type:
